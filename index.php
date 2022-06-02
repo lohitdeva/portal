@@ -27,6 +27,26 @@
                 margin-right: 50px;
             }
 
+            .input-container {
+                display: flex;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .icon {
+                padding: 10px;
+                background-color: #b331ce;
+                border-radius: .25rem;
+                border: 1px solid #ced4da;
+                min-width: 50px;
+                text-align: center;
+            }
+
+            #form-box {
+                background-color: #a2171b;
+            }
+
+
         </style>
 
         <!-- Required meta tags -->
@@ -37,12 +57,12 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <!-- FontAwesome CSS -->
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <title>Login</title> 
     </head>
 
-    <body>
+    <body style="background-color:#f6dbbd">
 
         <div class="container">
 
@@ -52,17 +72,22 @@
                 </div>
             </div>
 
-            <div class="jumbotron">
+            <div class="jumbotron" id='form-box'>
                 <form>
-                    <div class="form-group input-container">
+                    <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <i class="fa fa-envelope icon"></i>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <div class="input-container">
+                            <i class="fa fa-envelope icon"></i>
+                            <input type="email" class="form-control" id="emailID" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>  
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <div class='input-container'>
+                            <i class="fa fa-key icon"></i>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
                     </div>
 
                     <div class="centered">
