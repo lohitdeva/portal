@@ -13,10 +13,10 @@
         <!-- FontAwesome CSS -->
         <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <!-- Google Fonts Stylesheet-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap" rel="stylesheet">
-
 
         <style>
 
@@ -35,7 +35,7 @@
             }
 
             .jumbotron {
-                margin-top: 25px;
+                margin-top: 50px;
             }
 
             #submit-btn {
@@ -102,7 +102,7 @@
             <div class="jumbotron" id='form-box'>
                 <form>
                     <div class="form-group">
-                        <label for="exampleInputEmail1" class='form-text'>Email address</label>
+                        <label for="EmailAddress" class='form-text'>Email address</label>
                         <div class="input-container">
                             <i class="fa fa-envelope icon"></i>
                             <input type="email" class="form-control" id="emailID" aria-describedby="emailHelp" placeholder="Enter email">
@@ -110,16 +110,16 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="exampleInputPassword1" class='form-text'>Password</label>
+                        <label for="Password" class='form-text'>Password</label>
                         <div class='input-container'>
                             <i class="fa fa-key icon"></i>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="password" class="form-control" placeholder="Password">
                         </div>
                     </div>
 
                     <div class="centered">
                         <button type="submit" class="btn btn-primary" id='submit-btn'>Submit</button>
-                        <button type="submit" class="btn btn-primary">Register New User</button>
+                        <a href="register.php" class="btn btn-primary" role="button">Register New User</a>
                     </div>
 
                 </form>
@@ -129,7 +129,9 @@
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     </body>
