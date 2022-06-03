@@ -95,7 +95,7 @@
 
             <div class="container" id='img_container'>
                 <div class='centered'>
-                    <img src="mes logo.jpg" alt="MES Logo" id='logo' class="img-fluid">
+                    <img src="mes logo.png" alt="MES Logo" id='logo' class="img-fluid">
                 </div>
             </div>
 
