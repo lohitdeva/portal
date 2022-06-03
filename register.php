@@ -27,12 +27,21 @@
         #heading {
             margin-top: 25px;
             margin-bottom: 30px;
-            margin-left: 50px;
         }
 
         #heading-text {
             font-size: 2.5rem;
         }
+
+        .form-control {
+                border: 1px solid black;
+            }
+
+            .form-text {
+                font-family: 'Tiro Telugu', serif;
+                color: white;
+                font-size: 20px;
+            }
 
 
     </style>
@@ -40,19 +49,63 @@
     <title>New User Registration</title>
   </head>
   <body>
-    <div id='heading'>
-        <h1 id='heading-text'>Register</h1>
-    </div>
+
     <div class='container'>
+
+        <div id='heading'>
+            <h1 id='heading-text'>Register</h1>
+        </div>
+
         <div class='jumbotron'>
 
-        </div>
-    </div>
+            <form action="">
 
+                <div class='form-group'>
+                <label for="FName" class='form-text'>First Name</label>
+                <input type="text" class="form-control" required>
+                </div>
+
+                <div class='form-group'>
+                <label for="LName" class='form-text'>Last Name</label>
+                <input type="text" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="EmailAddress" class='form-text'>Email address</label>
+                    <input type="email" class="form-control" id="emailID" aria-describedby="emailHelp" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="Password" class='form-text'>Password</label>
+                    <input type="password" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Re-Password" class='form-text'>Re-Enter Password</label>
+                    <input type="password" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Re-Password" class='form-text'>Re-Enter Password</label>
+                    <input type="password" class="form-control" required>
+                </div>
+
+                <div class='form-group'>                
+                    <label for="Date" class='form-text'>Date of Birth</label>
+                    <input type="date" class='form-control' required>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   </body>
 </html>
