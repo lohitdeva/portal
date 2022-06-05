@@ -35,13 +35,23 @@
 
         .form-control {
                 border: 1px solid black;
-            }
+        }
 
-            .form-text {
-                font-family: 'Tiro Telugu', serif;
-                color: white;
-                font-size: 20px;
-            }
+        .form-text {
+            font-family: 'Tiro Telugu', serif;
+            color: white;
+            font-size: 20px;
+        }
+
+        .btn-primary {
+                background-color: #15502C;
+                border-color: #0f3d20;
+        }
+
+        .btn-primary:hover {
+            background-color: #289b54;
+            border-color: #0f3d20;
+        }
 
 
     </style>
@@ -85,15 +95,34 @@
                     <input type="password" class="form-control" required>
                 </div>
 
-                <div class="form-group">
-                    <label for="Re-Password" class='form-text'>Re-Enter Password</label>
-                    <input type="password" class="form-control" required>
-                </div>
-
                 <div class='form-group'>                
                     <label for="Date" class='form-text'>Date of Birth</label>
                     <input type="date" class='form-control' required>
                 </div>
+
+                <div class='form-group'>
+                    <label for="Combo" class='form-text'>Select your Course</label>
+                    <select name="Course" class="form-control" required>
+                        <option selected disabled value="">----Courses----</option>
+                        <option value="PCM">PCM - Physics, Chemistry, Mathematics</option>
+                        <option value="CBZ">CBZ - Chemistry, Botany, Zoology</option>
+                        <option value="EMS">EMS - Economics, Mathematics, Statistics</option>
+                        <option value="PMS">PMS - Physics, Mathematics, Statistics</option>
+                        <option value="PME">PME - Physics, Mathematics, Electronics</option>
+                        <option value="PMCs">PMCs - Physics, Mathematics, Computer Science</option>
+                        <option value="MSCs">MSCs - Mathematics, Statistics, Computer Science</option>
+                        <option value="BZPsy">BZPsy - Botany, Zoology, Psychology</option>
+                        <option value="CZBt">CZBt - Chemistry, Zoology, Biotechnology</option>
+                        <option value="EMCs">EMCs - Electronics, Mathematics, Computer Science</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="profpic" class='form-text'>Upload Profile Picture (Optional)</label>
+                    <input type="file" class="form-control-file" id="profpic-img" accept="image/*">
+                </div>
+
+                <button type="submit" class="btn btn-primary" id='submit-btn'>Register Now</button>
 
             </form>
 
